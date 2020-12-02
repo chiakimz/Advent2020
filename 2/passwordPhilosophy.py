@@ -25,7 +25,7 @@ def passwordPhilosophy1():
         second = int(line[1]) - 1
         letter = line[2]
         password = line[3]
-        if password[first] == letter and password[second] != letter or password[first] != letter and password[second] == letter:
+        if (password[first] == letter) != (password[second] == letter): #if either of them are true, excluding when both are true
             valid += 1
     return valid
 

@@ -1,7 +1,7 @@
 
 import time
 
-with open("input.txt") as f:
+with open("1/input.txt") as f:
     context = f.readlines()
 content = [int(x.strip()) for x in context]
 
